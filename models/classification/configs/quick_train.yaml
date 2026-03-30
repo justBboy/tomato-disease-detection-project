@@ -1,0 +1,16 @@
+dataset:
+  root_dir: data/classification
+  train_split: train
+  val_split: val
+
+training:
+  image_size: 224
+  batch_size: 32
+  epochs: 1
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  num_workers: 2
+  pretrained: false
+  freeze_backbone: false
+  save_dir: models/classification/checkpoints
+  seed: 42

@@ -1,0 +1,87 @@
+# -----------------------------
+# OS / Editor
+# -----------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+pip-wheel-metadata/
+.coverage
+.coverage.*
+htmlcov/
+
+# -----------------------------
+# Environments / Secrets
+# -----------------------------
+.venv/
+venv/
+env/
+.env
+.env.local
+.env.*.local
+
+# -----------------------------
+# Data (large / generated)
+# -----------------------------
+data/classification/
+data/segmentation/
+data/plantvillage/
+data/analytics/*.jsonl
+data/analytics/*.db
+data/analytics/*.sqlite*
+data/**/raw/
+data/**/processed/
+!data/analytics/.gitkeep
+
+# -----------------------------
+# Model Artifacts
+# -----------------------------
+models/**/checkpoints/*.pth
+models/**/*.pt
+models/**/*.onnx
+!models/**/checkpoints/.gitkeep
+models/**/runs/
+models/**/logs/
+models/**/outputs/
+models/plantvillage/
+
+# -----------------------------
+# Node / Frontend Build
+# -----------------------------
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+.expo/
+**/.expo/
+dist/
+web-build/
+coverage/
+.turbo/
+.vercel/
+*.tsbuildinfo
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

@@ -1,0 +1,22 @@
+dataset:
+  root_dir: data/segmentation
+  train_split: train
+  val_split: val
+
+model:
+  in_channels: 3
+  out_channels: 1
+  base_channels: 32
+
+training:
+  image_size: 256
+  batch_size: 8
+  epochs: 25
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  num_workers: 2
+  bce_weight: 1.0
+  dice_weight: 1.0
+  threshold: 0.5
+  save_dir: models/segmentation/checkpoints
+  seed: 42

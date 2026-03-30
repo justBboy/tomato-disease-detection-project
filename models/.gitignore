@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Checkpoints / weights
+**/checkpoints/*.pth
+**/*.pt
+**/*.onnx
+!**/checkpoints/.gitkeep
+
+# Experiment outputs
+**/runs/
+**/logs/
+**/outputs/
+
+# Local dataset staging
+plantvillage/
+*/data/
